@@ -1,0 +1,108 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 100;
+  background-color: #fafafa;      
+  margin: 0;    
+  padding: 0 1rem;
+  text-align: center;
+}
+a {
+  color: #0031c7;
+}
+.main-heading {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 2rem 1em 1em;
+  line-height: 1.5em;
+  text-align: center;  
+}
+.main-hero {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+#search {
+  padding: 2rem 1rem;
+  max-width: 1024px;
+  margin: -4px auto;
+  background: #d3d3d3;
+  border-radius: 10px;
+  text-align: left;
+}
+.search-field-copy {
+  margin: 0 2em 2em;
+}
+.search-field-copy > label {
+  display: block;
+  margin-bottom: .75rem;
+}
+.search-field-copy-center {
+  text-align: center;
+  margin-top: 0;
+}            
+.form-item {
+  width: 100%;
+}
+#more_options {
+  display: none;
+}
+#more_options.active {
+  display: inherit;
+}
+#more_options_toggle {
+  font-size: 12px;
+}
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+}
+#results {
+  display: block;
+  margin: 2rem auto;
+  max-width: 1024px;
+  padding: 1em;
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-transition: opacity 500ms ease-out;
+  transition: opacity 500ms ease-out;
+  border: 3px solid #d3d3d3;
+}
+#results.active {
+  opacity: 1;
+}
+.yelp-listing {
+    display: inline-block;
+    min-width: 100px;
+    width: 20%;
+    margin: 2em;
+}
+.yelp-listing-heading {
+  margin-bottom: .5em;
+}
+.yelp-listing-rating-image {
+    margin-bottom: 1em;
+}
+.yelp-listing-thumbnail {
+    margin: 0 auto;
+    display: block;
+}
+@media all and (min-width : 480px) {
+  .main-heading {
+    font-size: 24px;
+  }
+}
+@media all and (min-width : 768px) {       
+  .form-item {
+    width: initial;
+    margin-left: 1rem;
+  }        
+  .main-heading {
+    font-size: 32px;
+  }
+  .search-field-copy {
+    display: inline-block;
+  }
+  .search-field-copy > label {
+    display: initial;
+  }
+}
